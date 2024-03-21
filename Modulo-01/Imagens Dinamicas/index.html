@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+    <h1>Vamos fazer um exemplo de imagem que se adapta ao tamanho da tela</h1>
+    <picture>
+        <source media="(max-width: 700px )" srcset="ip.png" type="image/png">
+        <source media="(max-width: 1010px)" srcset="im.png" type="image/png"> 
+        <img src="ig.png" alt="imagem grande">
+    </picture>
+    <p>A ordem das imagens deve ser obedecida, da maior para menor como esta no código. Caso contrário, não funcionará.</p>
+    <h1>Vamos adicionar um audio</h1>
+         <audio src="media/quem-escreve.mp3" controls autoplay></audio>
+    <h2>outra forma de adicionar audios:</h2>
+    <p>formatos existentes de audio mais conhecidos: "
+        <abbr title=" MP3 significa MPEG 1 Layer-3 ">mpeg</abbr>, 
+        <abbr title="O WAV (Waveform Audio File Format) ">wav</abbr> e 
+        <abbr title="Ogg é o nome dado ao formato de arquivos de áudio criado pela Xiph.org">ogg</abbr>"</p>
+    <p>no código, a ordem importa, o algoritimo vai tentar executar de cima para baixo caso o primeiro não funcione, e assim sucessivamente.</p>
+        <audio preload="metadata" autoplay controls loop>
+            <source src="media/quem-escreve.mp3" type="mpeg">
+            <source src="media/quem-escreve.wav" type="wav">
+            <source src="media/quem-escreve.ogg" type="ogg">
+        </audio>
+        <p>não utilize arquivos wav, pois são pesadissimos.</p>
+</body>
+</html>

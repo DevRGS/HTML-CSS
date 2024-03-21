@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citações e Codigos</title>
+</head>
+<body>
+   <h1>Codigo fonte / Pré-Formatação</h1>
+    <p>O comando document.getElement.ById("teste") é escrito em javascript, mas, quando lido em uma linha, fica dificil de ler, pois as letras não tem o mesmo espaçamento.
+    </p>
+    <p>para resolver isso usamos a tag "code" para melhor a visualização do comando. veja o exemplo:
+    </p>
+    <p>
+        <code>
+            num = int(input("digite um numero"))
+            if num % 2 == 0:
+            print (f'o numero {num} é PAR')
+            else
+            print (f'o numeor {num} é IMPAR')
+            print ("fim do programa")
+        </code>
+    </p>
+    <p>Resolvemos o espaçamento, porem, desta forma, ele fica com a visualização quebrada pois bagunçou a organização do codigo. para resolver este outro problema, usamos a tag "pre" antes de utilizar a tag "code", ficando uma tag dentro da outra. veja o exemplo:
+    </p>    
+    <p> <pre>
+        <code>
+            num = int(input("digite um numero"))
+            if num % 2 == 0:
+            print (f'o numero {num} é PAR')
+            else
+            print (f'o numeor {num} é IMPAR')
+            print ("fim do programa")
+        </code>
+    </pre>
+</p>
+
+<h2>Citação Simples</h2>
+<p>Como dizia Leandro Karnal <q>mudar é dificil, não mudar é fatal</q>, usamos a tag "q" para fazer uma citação com semântica, não apenas formato usando aspas.
+</p>
+
+<h2>Citação Completa</h2>
+<p>Para fazer uma citação completa usamos a tag "blockquote" para retira uma citação da internet, mostrando que tiramos esta citação longa de um trecho de algum lugar. isto dá sentido à frase citada e não mostrando o link utilizado. Exemplo: </p>
+<blockquote cite="http://awmueller.com/psicologia/mudar-ou-nao-mudar.htm">mudar é dificil, não mudar é fatal</blockquote>
+
+<h2>Abreviações</h2>
+<p>Usamos abreviações utilizando a tag "abbr" para explicar o sentido da sigla escrita, para que as pessoas pesquisem no google e encontrem essa nossa citação escrita. Exemplo:</p>
+<p> Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascating Style Sheeps">CSS</abbr> e estou curtindo</p>
+
+<h2>Texto invetido</h2>
+<p>Pouco utlizado, mas bom saber para caso necessario. Ele inverte o texto para ser lido do fim para o começo, invertendo a ordem das letras. Usamos a tag "bdo" exemplo: </p>
+<p><bdo dir="rtl">Se prepara pra senta</bdo></p>
+</body>
+</html>

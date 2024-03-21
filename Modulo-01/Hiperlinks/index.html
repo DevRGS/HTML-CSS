@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiperlinks</title>
+</head>
+<body>
+    <h1>Hiperlink Externo</h1>
+     <h2>Externo sobrepondo aba</h2>
+         <p>utilizamo a tag "a" para criar uma referencia de hiperlink para a palavra desejada, a fim de encaminhar o usuario para um endereço externo de sua preferencia. Neste modo não indicado vamos sobrepor nosso site utlizando a tag "a" sem nenhum outro parametro alem da referencia. Exemplo: <a href="https://google.com">Acessar Google</a></p>
+    
+    <h2>Externo abrindo outra aba</h2>
+         <p>Neste modo adicionamos a mesma tag, porem acrescentando a tag (target="_blank" rel="external") após adicionar o site referencia, veja o exemplo a seguir. <a href="https://youtube.com.br" target="_blank" rel="external">Acessar Youtube</a> </p>
+         <p>Desta forma abrimos o link externo sem sobrepor nosso link original, aumentando a possiblidade do usuario voltar a navegar em nosso site. Este é o metodo indicado</p>
+
+    <h1>Hiperlink Interno</h1>
+        <p>Podemos também cria um meio de navegação pelo nosso próprio site, usando a mesma tag "a href=", porem mudando o nome do endereço para o endereço local do arquivo, que deve estar especificado o caminho que nosso algoritimo vai seguir até a nova pagina. e o target, que nessa vez será "_self", e o rel nesta vez será "next"</p>
+         <p>acesse a nossa <a href="pag002.html" target="_self" rel="next">outra pagina agora</a>, que criei um novo arquivo.html dentro da mesma pasta agora.</p>
+
+        <h2>Acesse o link interno dentro de outra pasta</h2>
+            <p>para isto funcionar, o comando é o mesmo, mas devemos especificar tambem qual pasta noso algoritomo deve acessar, antes de acessar nosso arquivo html. Caso queira voltar uma pasta, deve utilizar o comando ../ para fazer a sequencia de pastas a serem retornadas, cada ponto após o primeiro é uma pasta voltando. veja o exemplo a seguir:</p>
+             <p><a href="absinto/pag003.html" target="_self" rel="next">acesse a pagina 3</a></p>
+
+    <h1>Criar link para Download</h1>
+    <p>este comando "ul>li*4>a" cria uma lista com 4 li com a href, agilizando o trabalho</p>
+        <h2>Criar link</h2>
+            <p>Podemos criar um link para download, utilizando o mesmo comando a href=, porem devemos utilizar parametros diferentes após o nome do endereço do arquivo, no lugar do target, utlizamos "download= nome do arquivo que vai aparecer quando baixar.formato do arquivo" e o "type="existe inumeros types para realizar o download, é de extrema importância utlizar o type correto. para isto veja o site da <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">Iana</a></p>
+
+                <ul>
+                    <li><a href="Livro/tensões.pdf"download="tensões.pdf" type="application/pdf">Livro de tensões</a></li>
+                    <li><a href="Livro/tensões.rar" download="tensões zipado.rar" type="application/vnd.rar">Livro zipado</a></li>
+                </ul>
+
+
+        </body>
+</html>

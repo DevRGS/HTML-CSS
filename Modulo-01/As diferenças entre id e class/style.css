@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/*
+    em HTML é id, em CSS é "#"
+    em HTML é class, em CSS é "."
+*/
+
+body{
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h1{
+    color: cadetblue;
+}
+
+h1#principal {
+color: black;
+text-align: center;
+background-color: rgba(141, 164, 240, 0.205);
+}
+
+h2{
+    color:rgb(100, 124, 146)
+}
+
+p{
+    text-align: justify;
+}
+
+.basico{
+    color: green;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    max-width: auto;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+    
+}
+
+.basico:hover {
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.intermediario{
+    color: yellow;
+    text-align: center;
+    cursor: pointer;
+    max-width: auto;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.intermediario:hover {
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.avancado{
+    color: greenyellow;
+    text-align: center;
+    cursor: pointer;
+    max-width: auto;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.avancado:hover {
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
